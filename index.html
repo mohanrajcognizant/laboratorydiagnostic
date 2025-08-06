@@ -1,0 +1,2036 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijay Laboratory Services | NABL Certified Excellence</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Vijay Laboratory - Leading diagnostic laboratory with state-of-the-art equipment, NABL certification, and comprehensive testing services. Experience precision in healthcare diagnostics.">
+    <meta name="keywords" content="diagnostic laboratory, pathology lab, blood tests, medical diagnostics, NABL certified, healthcare, medical testing, laboratory services">
+    <meta name="author" content="Vijay Laboratory">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a'
+                        },
+                        accent: {
+                            50: '#ecfeff',
+                            100: '#cffafe',
+                            200: '#a5f3fc',
+                            300: '#67e8f9',
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                            700: '#0e7490',
+                            800: '#155e75',
+                            900: '#164e63'
+                        },
+                        success: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            300: '#6ee7b7',
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui'],
+                        'display': ['Poppins', 'ui-sans-serif', 'system-ui']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'bounce-slow': 'bounce 2s infinite'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        }
+        
+        /* Specific gradient backgrounds for carousel slides */
+        .ads1-gradient {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e3a8a 100%) !important;
+        }
+        
+        .ads2-gradient {
+            background: linear-gradient(135deg, #0891b2 0%, #0e7490 50%, #047857 100%) !important;
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(16px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, transparent 0%, #e5e7eb 50%, transparent 100%);
+        }
+        
+        /* Professional animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+        
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            .card-hover:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            }
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        
+        /* Navigation glass effect */
+        .nav-glass {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.98);
+            border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        /* Professional navigation styles */
+        .nav-link {
+            position: relative;
+            font-weight: 500;
+            letter-spacing: 0.025em;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            width: 30px;
+            height: 2px;
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            border-radius: 1px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Statistics Section Animations */
+        .animate-counter {
+            animation: countUp 2s ease-out forwards;
+        }
+
+        @keyframes countUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px) scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .stat-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: rotate(45deg);
+            transition: all 0.6s;
+            opacity: 0;
+        }
+
+        .stat-card:hover::before {
+            opacity: 1;
+            animation: shimmer 1.5s ease-in-out;
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%) translateY(-100%) rotate(45deg);
+            }
+            100% {
+                transform: translateX(100%) translateY(100%) rotate(45deg);
+            }
+        }
+
+        .pulse-slow {
+            animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes pulse-slow {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+        }
+
+        /* Floating animation enhancement */
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            25% {
+                transform: translateY(-10px) rotate(1deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(0deg);
+            }
+            75% {
+                transform: translateY(-10px) rotate(-1deg);
+            }
+        }
+        
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+        
+        .nav-link:hover {
+            color: #2563eb;
+            transform: translateY(-1px);
+        }
+        
+        /* Professional logo design */
+        .logo-container {
+            position: relative;
+        }
+        
+        .logo-icon {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .logo-icon:hover {
+            transform: rotate(5deg) scale(1.05);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+        }
+        
+        .logo-badge {
+            background: linear-gradient(135deg, #10b981, #059669);
+            animation: pulse 2s infinite;
+        }
+        
+        /* Professional CTA button */
+        .cta-button {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+          .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+        }
+        
+        /* Image Zoom Modal Styles */
+        .cursor-zoom-in {
+            cursor: zoom-in;
+        }
+        
+        #imageZoomModal {
+            backdrop-filter: blur(8px);
+            animation: fadeIn 0.3s ease-out;
+        }
+        
+        #imageZoomModal img {
+            animation: zoomIn 0.3s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes zoomIn {
+            from { 
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to { 
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Mobile menu improvements */
+        .mobile-menu-item {
+            position: relative;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(156, 163, 175, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu-item:hover {
+            background: rgba(37, 99, 235, 0.05);
+            padding-left: 8px;
+        }
+        
+        .mobile-menu-item:last-child {
+            border-bottom: none;
+        }
+        
+        /* Carousel Styles */
+        .carousel-slide {
+            transform: translateX(0);
+            min-height: 100vh;
+        }
+        
+        .carousel-slide:not(.active) {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        
+        .carousel-slide.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .carousel-slide.prev {
+            transform: translateX(-100%);
+        }
+        
+        .carousel-dot.active {
+            background-color: rgba(255, 255, 255, 0.8) !important;
+            transform: scale(1.2);
+        }
+        
+        /* Ensure proper z-index and positioning */
+        #adsCarousel {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            min-height: 100vh;
+        }
+        
+        /* Force background colors */
+        .ads1-gradient {
+            background: #2563eb !important;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e3a8a 100%) !important;
+        }
+        
+        .ads2-gradient {
+            background: #0891b2 !important;
+            background: linear-gradient(135deg, #0891b2 0%, #0e7490 50%, #047857 100%) !important;
+        }
+        
+        /* Carousel animation timing */
+        .carousel-slide {
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        /* Auto-hide controls on mobile */
+        @media (max-width: 768px) {
+            #prevSlide, #nextSlide {
+                display: none;
+            }
+            
+            .carousel-dot {
+                width: 12px !important;
+                height: 12px !important;
+            }
+        }
+        
+        /* About Carousel Styles */
+        .about-carousel-container {
+            position: relative;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .about-carousel-slides {
+            position: relative;
+            width: 100%;
+            height: 600px; /* Updated height to match image height */
+            overflow: hidden;
+        }
+        
+        .about-carousel-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.6s ease-in-out;
+            pointer-events: none; /* Prevent clicks on inactive slides */
+        }
+        
+        .about-carousel-slide.active {
+            opacity: 1;
+            pointer-events: auto; /* Allow clicks on active slide */
+        }
+        
+        .about-carousel-slide img {
+            width: 1100px; /* Updated width as requested */
+            height: 600px; /* Updated height as requested */
+            object-fit: cover;
+            margin: 0 auto;
+            display: block;
+            border-radius: 20px;
+            cursor: zoom-in;
+            transition: transform 0.3s ease;
+        }
+        
+        .about-carousel-slide img:hover {
+            transform: scale(1.02);
+        }
+        
+        .about-carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            z-index: 10;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .about-carousel-nav:hover {
+            transform: translateY(-50%) scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .about-carousel-prev {
+            left: 20px;
+        }
+        
+        .about-carousel-next {
+            right: 20px;
+        }
+        
+        .about-carousel-dots {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            z-index: 10;
+        }
+        
+        .about-carousel-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .about-carousel-dot.active {
+            background: white;
+            transform: scale(1.2);
+        }
+        
+        .about-carousel-dot:hover {
+            background: rgba(255, 255, 255, 0.8);
+            transform: scale(1.1);
+        }
+        
+        /* Mobile responsiveness for about carousel */
+        @media (max-width: 768px) {
+            .about-carousel-slides {
+                height: 450px; /* Adjusted for mobile */
+            }
+            
+            .about-carousel-slide img {
+                width: 100%;
+                height: 400px; /* Adjusted mobile height to maintain aspect ratio */
+                max-width: 100%; /* Full width on mobile */
+            }
+            
+            .about-carousel-nav {
+                width: 45px;
+                height: 45px;
+                font-size: 16px;
+            }
+            
+            .about-carousel-prev {
+                left: 10px;
+            }
+            
+            .about-carousel-next {
+                right: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .about-carousel-slides {
+                height: 350px; /* Increased for small mobile */
+            }
+            
+            .about-carousel-slide img {
+                height: 350px; /* Increased for small mobile */
+                max-width: 500px; /* Increased max-width for small mobile */
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased bg-gray-900 text-gray-900 overflow-x-hidden">
+    <!-- Professional Navigation -->
+    <nav class="fixed w-full z-50 nav-glass transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Professional Logo -->
+                <div class="flex items-center logo-container">
+                    <div class="flex items-center space-x-4">
+                        <div class="relative">
+                            <div class="w-14 h-14 logo-icon rounded-2xl shadow-lg flex items-center justify-center">
+                                <i class="fas fa-microscope text-white text-xl"></i>
+                            </div>
+                            <div class="absolute -bottom-1 -right-1 w-5 h-5 logo-badge rounded-full border-2 border-white flex items-center justify-center">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                        </div>
+                        <div class="flex flex-col"> 
+                            <h1 class="text-2xl font-bold font-display text-gray-800 tracking-tight">Vijay Laboratory</h1>
+                            <span class="text-sm font-semibold text-primary-600 uppercase tracking-widest">NABL Certified Excellence</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-1">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-primary-600 px-4 py-2 rounded-lg transition-colors duration-300">
+                        <i class="fas fa-home mr-2 text-sm"></i>Home
+                    </a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-primary-600 px-4 py-2 rounded-lg transition-colors duration-300">
+                        <i class="fas fa-flask mr-2 text-sm"></i>Services
+                    </a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-primary-600 px-4 py-2 rounded-lg transition-colors duration-300">
+                        <i class="fas fa-info-circle mr-2 text-sm"></i>About
+                    </a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-primary-600 px-4 py-2 rounded-lg transition-colors duration-300">
+                        <i class="fas fa-home-medical mr-2 text-sm"></i>Home Collection
+                    </a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-primary-600 px-4 py-2 rounded-lg transition-colors duration-300">
+                        <i class="fas fa-phone mr-2 text-sm"></i>Contact
+                    </a>
+                    <div class="ml-6 pl-6 border-l border-gray-200">
+                        <a href="#book-visit" class="cta-button text-white px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-300 inline-flex items-center">
+                            <i class="fas fa-calendar-check mr-2"></i>
+                            Book Test
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-btn" class="p-3 rounded-xl text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-all duration-300 border border-gray-200">
+                        <i class="fas fa-bars text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white/95 backdrop-blur-lg border-t border-gray-100 shadow-xl">
+            <div class="px-6 py-4 space-y-1">
+                <a href="#home" class="mobile-menu-item block text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">
+                    <i class="fas fa-home mr-3 text-primary-500 w-5"></i>Home
+                </a>
+                <a href="#services" class="mobile-menu-item block text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">
+                    <i class="fas fa-flask mr-3 text-primary-500 w-5"></i>Services
+                </a>
+                <a href="#about" class="mobile-menu-item block text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">
+                    <i class="fas fa-info-circle mr-3 text-primary-500 w-5"></i>About
+                </a>
+                <a href="#contact" class="mobile-menu-item block text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">
+                    <i class="fas fa-home-medical mr-3 text-primary-500 w-5"></i>Home Collection
+                </a>
+                <a href="#contact" class="mobile-menu-item block text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">
+                    <i class="fas fa-phone mr-3 text-primary-500 w-5"></i>Contact
+                </a>
+                <div class="pt-4 mt-4 border-t border-gray-100">
+                    <a href="#book-visit" class="cta-button block text-white text-center py-3 rounded-xl font-semibold transition-all duration-300">
+                        <i class="fas fa-calendar-check mr-2"></i>
+                        Book Test
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section with Ads Carousel -->
+    <section id="home" class="relative min-h-screen overflow-hidden">
+        <!-- Ads Carousel Container -->
+        <div class="relative w-full h-full">
+            <!-- Carousel Slides -->
+            <div id="adsCarousel" class="relative w-full h-full">
+                <!-- Ads 1 -->
+                <div class="carousel-slide active absolute inset-0 transition-all duration-1000 ease-in-out" style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e3a8a 100%);">
+                    <!-- Additional background div for reinforcement -->
+                    <div class="absolute inset-0" style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e3a8a 100%); z-index: 1;"></div>
+                    
+                    <!-- Floating Elements for Ads 1 -->
+                    <div class="absolute inset-0 z-10">
+                        <div class="absolute top-20 left-10 opacity-20 animate-float" style="z-index: 15;">
+                            <i class="fas fa-dna text-white text-6xl"></i>
+                        </div>
+                        <div class="absolute top-40 right-20 opacity-15 animate-float" style="animation-delay: 1s; z-index: 15;">
+                            <i class="fas fa-microscope text-white text-4xl"></i>
+                        </div>
+                        <div class="absolute bottom-40 left-20 opacity-20 animate-float" style="animation-delay: 2s; z-index: 15;">
+                            <i class="fas fa-heartbeat text-white text-5xl"></i>
+                        </div>
+                        <div class="absolute bottom-20 right-10 opacity-15 animate-float" style="animation-delay: 1.5s; z-index: 15;">
+                            <i class="fas fa-flask text-white text-4xl"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Ads 1 Content -->
+                    <div class="relative z-20 flex items-center justify-center min-h-screen" style="z-index: 30;">
+                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+                            <div class="inline-flex items-center px-4 py-2 glass-effect rounded-full mb-8 animate-fade-in">
+                                <i class="fas fa-award text-yellow-300 mr-2"></i>
+                                <span class="text-sm font-semibold">NABL Certified Laboratory</span>
+                            </div>
+                            
+                            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold font-display mb-6 animate-slide-up">
+                                Advanced Diagnostic
+                                <span class="block bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent">
+                                    Excellence
+                                </span>
+                            </h1>
+                            
+                            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90 animate-slide-up" style="animation-delay: 0.2s;">
+                                State-of-the-art laboratory services with precision diagnostics, 
+                                <span class="font-semibold text-cyan-300">powered by cutting-edge technology</span>
+                            </p>
+                            
+                            <div class="flex flex-wrap justify-center gap-8 mb-12 animate-slide-up" style="animation-delay: 0.4s;">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse-slow"></div>
+                                    <span class="font-semibold">99.9% Accuracy</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-blue-400 rounded-full animate-pulse-slow"></div>
+                                    <span class="font-semibold">24/7 Service</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-yellow-400 rounded-full animate-pulse-slow"></div>
+                                    <span class="font-semibold">50K+ Tests</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style="animation-delay: 0.6s;">
+                                <a href="#book-visit" class="bg-white text-primary-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 min-w-[200px]">
+                                    <i class="fas fa-home mr-2"></i>
+                                    Book Home Visit
+                                </a>
+                                <a href="#services" class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-primary-600 transition-all duration-300 glass-effect min-w-[200px]">
+                                    <i class="fas fa-flask mr-2"></i>
+                                    Our Services
+                                </a>
+                            </div>
+
+                            <!-- Integrated Statistics Grid -->
+                            <div class="mt-16 animate-slide-up" style="animation-delay: 0.8s;">
+                                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 max-w-5xl mx-auto">
+                                    <!-- Stat 1: Accuracy Rate -->
+                                    <div class="text-center group cursor-pointer">
+                                        <div class="stat-card relative bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-4 lg:p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 transform hover:scale-105">
+                                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center shadow-lg pulse-slow">
+                                                    <i class="fas fa-bullseye text-white text-sm lg:text-base"></i>
+                                                </div>
+                                            </div>
+                                            <div class="pt-3 lg:pt-4">
+                                                <div class="text-2xl lg:text-3xl font-bold text-white mb-1 font-display">99.9%</div>
+                                                <div class="text-green-300 font-semibold text-xs lg:text-sm">Accuracy Rate</div>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-green-400 to-emerald-500 rounded-b-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Stat 2: Tests Completed -->
+                                    <div class="text-center group cursor-pointer">
+                                        <div class="stat-card relative bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-4 lg:p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 transform hover:scale-105">
+                                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full flex items-center justify-center shadow-lg pulse-slow" style="animation-delay: 0.5s;">
+                                                    <i class="fas fa-vials text-white text-sm lg:text-base"></i>
+                                                </div>
+                                            </div>
+                                            <div class="pt-3 lg:pt-4">
+                                                <div class="text-2xl lg:text-3xl font-bold text-white mb-1 font-display">50K+</div>
+                                                <div class="text-blue-300 font-semibold text-xs lg:text-sm">Tests Completed</div>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-b-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Stat 3: Service Availability -->
+                                    <div class="text-center group cursor-pointer">
+                                        <div class="stat-card relative bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-4 lg:p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 transform hover:scale-105">
+                                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg pulse-slow" style="animation-delay: 1s;">
+                                                    <i class="fas fa-clock text-white text-sm lg:text-base"></i>
+                                                </div>
+                                            </div>
+                                            <div class="pt-3 lg:pt-4">
+                                                <div class="text-2xl lg:text-3xl font-bold text-white mb-1 font-display">24/7</div>
+                                                <div class="text-yellow-300 font-semibold text-xs lg:text-sm">Service Available</div>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-b-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Stat 4: Years Experience -->
+                                    <div class="text-center group cursor-pointer">
+                                        <div class="stat-card relative bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-4 lg:p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 transform hover:scale-105">
+                                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center shadow-lg pulse-slow" style="animation-delay: 1.5s;">
+                                                    <i class="fas fa-award text-white text-sm lg:text-base"></i>
+                                                </div>
+                                            </div>
+                                            <div class="pt-3 lg:pt-4">
+                                                <div class="text-2xl lg:text-3xl font-bold text-white mb-1 font-display">10+</div>
+                                                <div class="text-purple-300 font-semibold text-xs lg:text-sm">Years Experience</div>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-500 rounded-b-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Additional Features Section -->
+                            <div class="mt-12 animate-slide-up" style="animation-delay: 1s;">
+                                <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-6 max-w-4xl mx-auto">
+                                    <!-- Feature 1: Fully Automated -->
+                                    <div class="group">
+                                        <div class="relative bg-white bg-opacity-5 backdrop-blur-md rounded-lg p-3 lg:p-4 border border-white border-opacity-10 hover:bg-opacity-10 transition-all duration-300 transform hover:scale-105">
+                                            <div class="text-center">
+                                                <div class="w-8 h-8 lg:w-12 lg:h-12 bg-gradient-to-br from-primary-400 to-primary-600 rounded-lg flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition-transform duration-300">
+                                                    <i class="fas fa-robot text-white text-sm lg:text-lg"></i>
+                                                </div>
+                                                <h4 class="text-sm lg:text-base font-bold text-white mb-1">Fully Automated</h4>
+                                                <p class="text-blue-200 text-xs leading-relaxed hidden lg:block">
+                                                    Advanced automation ensures precision
+                                                </p>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary-400 to-primary-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Feature 2: Rapid Results -->
+                                    <div class="group">
+                                        <div class="relative bg-white bg-opacity-5 backdrop-blur-md rounded-lg p-3 lg:p-4 border border-white border-opacity-10 hover:bg-opacity-10 transition-all duration-300 transform hover:scale-105">
+                                            <div class="text-center">
+                                                <div class="w-8 h-8 lg:w-12 lg:h-12 bg-gradient-to-br from-success-400 to-success-600 rounded-lg flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition-transform duration-300">
+                                                    <i class="fas fa-clock text-white text-sm lg:text-lg"></i>
+                                                </div>
+                                                <h4 class="text-sm lg:text-base font-bold text-white mb-1">Rapid Results</h4>
+                                                <p class="text-blue-200 text-xs leading-relaxed hidden lg:block">
+                                                    Quick turnaround time
+                                                </p>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-success-400 to-success-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Feature 3: Home Collection -->
+                                    <div class="group">
+                                        <div class="relative bg-white bg-opacity-5 backdrop-blur-md rounded-lg p-3 lg:p-4 border border-white border-opacity-10 hover:bg-opacity-10 transition-all duration-300 transform hover:scale-105">
+                                            <div class="text-center">
+                                                <div class="w-8 h-8 lg:w-12 lg:h-12 bg-gradient-to-br from-accent-400 to-accent-600 rounded-lg flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition-transform duration-300">
+                                                    <i class="fas fa-home text-white text-sm lg:text-lg"></i>
+                                                </div>
+                                                <h4 class="text-sm lg:text-base font-bold text-white mb-1">Home Collection</h4>
+                                                <p class="text-blue-200 text-xs leading-relaxed hidden lg:block">
+                                                    Convenient doorstep service
+                                                </p>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-accent-400 to-accent-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Feature 4: NABL Certified -->
+                                    <div class="group">
+                                        <div class="relative bg-white bg-opacity-5 backdrop-blur-md rounded-lg p-3 lg:p-4 border border-white border-opacity-10 hover:bg-opacity-10 transition-all duration-300 transform hover:scale-105">
+                                            <div class="text-center">
+                                                <div class="w-8 h-8 lg:w-12 lg:h-12 bg-gradient-to-br from-orange-400 to-red-500 rounded-lg flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition-transform duration-300">
+                                                    <i class="fas fa-certificate text-white text-sm lg:text-lg"></i>
+                                                </div>
+                                                <h4 class="text-sm lg:text-base font-bold text-white mb-1">NABL Certified</h4>
+                                                <p class="text-blue-200 text-xs leading-relaxed hidden lg:block">
+                                                    Accredited laboratory
+                                                </p>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-orange-400 to-red-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ads 2 -->
+                <div class="carousel-slide absolute inset-0 opacity-0 transition-all duration-1000 ease-in-out" style="background: linear-gradient(135deg, #0891b2 0%, #0e7490 50%, #047857 100%);">
+                    <!-- Additional background div for reinforcement -->
+                    <div class="absolute inset-0" style="background: linear-gradient(135deg, #0891b2 0%, #0e7490 50%, #047857 100%); z-index: 1;"></div>
+                    
+                    <!-- Floating Elements for Ads 2 -->
+                    <div class="absolute inset-0 z-10">
+                        <div class="absolute top-32 left-16 opacity-25 animate-float" style="z-index: 15;">
+                            <i class="fas fa-user-md text-white text-5xl"></i>
+                        </div>
+                        <div class="absolute top-24 right-12 opacity-20 animate-float" style="animation-delay: 0.5s; z-index: 15;">
+                            <i class="fas fa-stethoscope text-white text-4xl"></i>
+                        </div>
+                        <div class="absolute bottom-36 left-12 opacity-25 animate-float" style="animation-delay: 1.5s; z-index: 15;">
+                            <i class="fas fa-hospital text-white text-6xl"></i>
+                        </div>
+                        <div class="absolute bottom-24 right-16 opacity-20 animate-float" style="animation-delay: 2s; z-index: 15;">
+                            <i class="fas fa-chart-line text-white text-4xl"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Ads 2 Content -->
+                    <div class="relative z-20 flex items-center justify-center min-h-screen" style="z-index: 30;">
+                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+                            <div class="inline-flex items-center px-4 py-2 glass-effect rounded-full mb-8 animate-fade-in">
+                                <i class="fas fa-home text-green-300 mr-2"></i>
+                                <span class="text-sm font-semibold">Home Sample Collection</span>
+                            </div>
+                            
+                            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold font-display mb-6 animate-slide-up">
+                                Convenience at
+                                <span class="block bg-gradient-to-r from-green-300 to-teal-300 bg-clip-text text-transparent">
+                                    Your Doorstep
+                                </span>
+                            </h1>
+                            
+                            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90 animate-slide-up" style="animation-delay: 0.2s;">
+                                Professional sample collection service at your home with 
+                                <span class="font-semibold text-green-300">trained phlebotomists and safety protocols</span>
+                            </p>
+                            
+                            <div class="flex flex-wrap justify-center gap-8 mb-12 animate-slide-up" style="animation-delay: 0.4s;">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse-slow"></div>
+                                    <span class="font-semibold">Free Collection</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-teal-400 rounded-full animate-pulse-slow"></div>
+                                    <span class="font-semibold">Same Day Service</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-yellow-400 rounded-full animate-pulse-slow"></div>
+                                    <span class="font-semibold">Safe & Hygienic</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style="animation-delay: 0.6s;">
+                                <a href="#book-visit" class="bg-white text-accent-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 min-w-[200px]">
+                                    <i class="fas fa-calendar-check mr-2"></i>
+                                    Schedule Now
+                                </a>
+                                <a href="tel:+919876543210" class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-accent-600 transition-all duration-300 glass-effect min-w-[200px]">
+                                    <i class="fas fa-phone mr-2"></i>
+                                    Call Now
+                                </a>
+                            </div>
+
+                            <!-- Integrated Home Collection Features -->
+                            <div class="mt-16 animate-slide-up" style="animation-delay: 0.8s;">
+                                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 max-w-5xl mx-auto">
+                                    <!-- Feature 1: Free Collection -->
+                                    <div class="text-center group cursor-pointer">
+                                        <div class="stat-card relative bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-4 lg:p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 transform hover:scale-105">
+                                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center shadow-lg pulse-slow">
+                                                    <i class="fas fa-gift text-white text-sm lg:text-base"></i>
+                                                </div>
+                                            </div>
+                                            <div class="pt-3 lg:pt-4">
+                                                <div class="text-lg lg:text-xl font-bold text-white mb-1 font-display">FREE</div>
+                                                <div class="text-green-300 font-semibold text-xs lg:text-sm">Collection</div>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-green-400 to-emerald-500 rounded-b-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Feature 2: Same Day Service -->
+                                    <div class="text-center group cursor-pointer">
+                                        <div class="stat-card relative bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-4 lg:p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 transform hover:scale-105">
+                                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-full flex items-center justify-center shadow-lg pulse-slow" style="animation-delay: 0.5s;">
+                                                    <i class="fas fa-shipping-fast text-white text-sm lg:text-base"></i>
+                                                </div>
+                                            </div>
+                                            <div class="pt-3 lg:pt-4">
+                                                <div class="text-lg lg:text-xl font-bold text-white mb-1 font-display">SAME DAY</div>
+                                                <div class="text-teal-300 font-semibold text-xs lg:text-sm">Service</div>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-teal-400 to-cyan-500 rounded-b-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Feature 3: Safe & Hygienic -->
+                                    <div class="text-center group cursor-pointer">
+                                        <div class="stat-card relative bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-4 lg:p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 transform hover:scale-105">
+                                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg pulse-slow" style="animation-delay: 1s;">
+                                                    <i class="fas fa-shield-alt text-white text-sm lg:text-base"></i>
+                                                </div>
+                                            </div>
+                                            <div class="pt-3 lg:pt-4">
+                                                <div class="text-lg lg:text-xl font-bold text-white mb-1 font-display">SAFE</div>
+                                                <div class="text-yellow-300 font-semibold text-xs lg:text-sm">& Hygienic</div>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-b-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Feature 4: Trained Staff -->
+                                    <div class="text-center group cursor-pointer">
+                                        <div class="stat-card relative bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-4 lg:p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 transform hover:scale-105">
+                                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                                                <div class="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center shadow-lg pulse-slow" style="animation-delay: 1.5s;">
+                                                    <i class="fas fa-user-nurse text-white text-sm lg:text-base"></i>
+                                                </div>
+                                            </div>
+                                            <div class="pt-3 lg:pt-4">
+                                                <div class="text-lg lg:text-xl font-bold text-white mb-1 font-display">TRAINED</div>
+                                                <div class="text-purple-300 font-semibold text-xs lg:text-sm">Phlebotomists</div>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-500 rounded-b-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carousel Navigation -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50 flex space-x-3">
+                <button class="carousel-dot active w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300 hover:bg-opacity-75" data-slide="0"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-30 transition-all duration-300 hover:bg-opacity-75" data-slide="1"></button>
+            </div>
+            
+            <!-- Carousel Controls -->
+            <button id="prevSlide" class="absolute left-4 top-1/2 transform -translate-y-1/2 z-50 w-12 h-12 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm">
+                <i class="fas fa-chevron-left text-white text-xl"></i>
+            </button>
+            <button id="nextSlide" class="absolute right-4 top-1/2 transform -translate-y-1/2 z-50 w-12 h-12 bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-sm">
+                <i class="fas fa-chevron-right text-white text-xl"></i>
+            </button>
+        </div>
+        
+        <!-- Bottom Gradient -->
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-50 to-transparent z-10"></div>
+    </section>
+
+    <!-- Services & Laboratory Tests Section -->
+    <section id="services" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-bold font-display text-gray-900 mb-4">
+                    Our <span class="text-gradient">Services & Tests</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive diagnostic solutions with cutting-edge technology and expert analysis
+                </p>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary-600 to-accent-500 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <!-- Tests Table -->
+            <div class="animate-on-scroll" style="animation-delay: 0.2s;">
+                <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+                    <!-- Table Header -->
+                    <div class="bg-gradient-to-r from-primary-600 to-primary-700 px-8 py-6">
+                        <h3 class="text-2xl font-bold text-white text-center">Available Laboratory Tests</h3>
+                    </div>
+                    
+                    <!-- Table Content -->
+                    <div class="p-8">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <!-- Test Item -->
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-primary-50 transition-all duration-300 border border-gray-100 hover:border-primary-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-primary-500 rounded-full group-hover:bg-primary-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-primary-700 transition-colors duration-200">Haemogram (CBC)</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-success-50 transition-all duration-300 border border-gray-100 hover:border-success-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-success-500 rounded-full group-hover:bg-success-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-success-700 transition-colors duration-200">Glucose - Fasting</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-accent-50 transition-all duration-300 border border-gray-100 hover:border-accent-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-accent-500 rounded-full group-hover:bg-accent-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-accent-700 transition-colors duration-200">Glucose - Post Prandial</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-orange-50 transition-all duration-300 border border-gray-100 hover:border-orange-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-orange-500 rounded-full group-hover:bg-orange-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-orange-700 transition-colors duration-200">Glucose - Random</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-purple-50 transition-all duration-300 border border-gray-100 hover:border-purple-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-purple-500 rounded-full group-hover:bg-purple-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-purple-700 transition-colors duration-200">Lipid Profile</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-pink-50 transition-all duration-300 border border-gray-100 hover:border-pink-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-pink-500 rounded-full group-hover:bg-pink-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-pink-700 transition-colors duration-200">Liver Function Test</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-indigo-50 transition-all duration-300 border border-gray-100 hover:border-indigo-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-indigo-500 rounded-full group-hover:bg-indigo-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-indigo-700 transition-colors duration-200">Glyco Hemoglobin (HbA1c)</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-teal-50 transition-all duration-300 border border-gray-100 hover:border-teal-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-teal-500 rounded-full group-hover:bg-teal-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-teal-700 transition-colors duration-200">Thyroid Function Test</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-red-50 transition-all duration-300 border border-gray-100 hover:border-red-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-red-500 rounded-full group-hover:bg-red-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-red-700 transition-colors duration-200">TSH</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-blue-50 transition-all duration-300 border border-gray-100 hover:border-blue-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-blue-500 rounded-full group-hover:bg-blue-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-blue-700 transition-colors duration-200">Urea</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-green-50 transition-all duration-300 border border-gray-100 hover:border-green-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-green-500 rounded-full group-hover:bg-green-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-green-700 transition-colors duration-200">Creatinine</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-yellow-50 transition-all duration-300 border border-gray-100 hover:border-yellow-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-yellow-500 rounded-full group-hover:bg-yellow-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-yellow-700 transition-colors duration-200">Uric Acid</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-primary-50 transition-all duration-300 border border-gray-100 hover:border-primary-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-primary-500 rounded-full group-hover:bg-primary-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-primary-700 transition-colors duration-200">Electrolytes</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-success-50 transition-all duration-300 border border-gray-100 hover:border-success-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-success-500 rounded-full group-hover:bg-success-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-success-700 transition-colors duration-200">Sodium</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-accent-50 transition-all duration-300 border border-gray-100 hover:border-accent-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-accent-500 rounded-full group-hover:bg-accent-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-accent-700 transition-colors duration-200">Potassium</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-orange-50 transition-all duration-300 border border-gray-100 hover:border-orange-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-orange-500 rounded-full group-hover:bg-orange-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-orange-700 transition-colors duration-200">Urine Examination</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-purple-50 transition-all duration-300 border border-gray-100 hover:border-purple-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-purple-500 rounded-full group-hover:bg-purple-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-purple-700 transition-colors duration-200">Calcium</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-pink-50 transition-all duration-300 border border-gray-100 hover:border-pink-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-pink-500 rounded-full group-hover:bg-pink-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-pink-700 transition-colors duration-200">C- Reactive Protein</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-indigo-50 transition-all duration-300 border border-gray-100 hover:border-indigo-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-indigo-500 rounded-full group-hover:bg-indigo-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-indigo-700 transition-colors duration-200">Rheumatoid Factor</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-teal-50 transition-all duration-300 border border-gray-100 hover:border-teal-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-teal-500 rounded-full group-hover:bg-teal-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-teal-700 transition-colors duration-200">Rheumatoid Factor by Nephelometry</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-red-50 transition-all duration-300 border border-gray-100 hover:border-red-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-red-500 rounded-full group-hover:bg-red-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-red-700 transition-colors duration-200">Blood Group & RH</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-blue-50 transition-all duration-300 border border-gray-100 hover:border-blue-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-blue-500 rounded-full group-hover:bg-blue-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-blue-700 transition-colors duration-200">Bilirubin level Total</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-green-50 transition-all duration-300 border border-gray-100 hover:border-green-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-green-500 rounded-full group-hover:bg-green-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-green-700 transition-colors duration-200">SGOT (AST)</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-yellow-50 transition-all duration-300 border border-gray-100 hover:border-yellow-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-yellow-500 rounded-full group-hover:bg-yellow-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-yellow-700 transition-colors duration-200">SGPT (ALT)</span>
+                            </div>
+
+                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-violet-50 transition-all duration-300 border border-gray-100 hover:border-violet-200 hover:shadow-md group">
+                                <div class="w-3 h-3 bg-violet-500 rounded-full group-hover:bg-violet-600 transition-colors duration-200"></div>
+                                <span class="text-gray-800 font-medium group-hover:text-violet-700 transition-colors duration-200">25 OH Cholecalciferol (D2+D3)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Table Footer -->
+                    <div class="bg-gray-50 px-8 py-6 border-t border-gray-100">
+                        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                            <div class="flex items-center space-x-2 text-gray-600">
+                                <i class="fas fa-info-circle text-primary-500"></i>
+                                <span class="text-sm">All tests performed with NABL certified procedures</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#book-visit" class="bg-primary-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl text-sm">
+                                    <i class="fas fa-calendar-check mr-2"></i>
+                                    Book Test
+                                </a>
+                                <a href="#contact" class="border border-primary-600 text-primary-600 px-6 py-3 rounded-xl font-semibold hover:bg-primary-50 transition-all duration-300 text-sm">
+                                    <i class="fas fa-phone mr-2"></i>
+                                    Inquire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Services Grid -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
+            <!-- Services Header -->
+            <div class="text-center mb-16 animate-on-scroll">
+                <h3 class="text-3xl md:text-4xl font-bold font-display text-gray-900 mb-4">
+                    Our <span class="text-gradient">Specialized Services</span>
+                </h3>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Advanced diagnostic services delivered with precision and care
+                </p>
+            </div>
+            
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100 animate-on-scroll">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-tint text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold font-display text-gray-900 mb-4">Complete Blood Count</h4>
+                    <p class="text-gray-600 mb-6">Comprehensive blood analysis including RBC, WBC, platelets, and differential count with automated precision.</p>
+                    <div class="flex items-center text-primary-600 font-semibold">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        Fully Automated
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100 animate-on-scroll" style="animation-delay: 0.1s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-success-500 to-success-700 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-heartbeat text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold font-display text-gray-900 mb-4">Cardiac Profile</h4>
+                    <p class="text-gray-600 mb-6">Complete cardiovascular risk assessment including cholesterol, triglycerides, HDL, and LDL analysis.</p>
+                    <div class="flex items-center text-success-600 font-semibold">
+                        <i class="fas fa-heart mr-2"></i>
+                        Heart Health Focus
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100 animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-accent-500 to-accent-700 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-dna text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold font-display text-gray-900 mb-4">Molecular Diagnostics</h4>
+                    <p class="text-gray-600 mb-6">Advanced genetic testing and molecular analysis for precise disease detection and monitoring.</p>
+                    <div class="flex items-center text-accent-600 font-semibold">
+                        <i class="fas fa-microscope mr-2"></i>
+                        Advanced Technology
+                    </div>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100 animate-on-scroll" style="animation-delay: 0.3s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold font-display text-gray-900 mb-4">Diabetes Management</h4>
+                    <p class="text-gray-600 mb-6">Comprehensive diabetes monitoring including HbA1c, glucose tolerance, and insulin resistance tests.</p>
+                    <div class="flex items-center text-orange-600 font-semibold">
+                        <i class="fas fa-chart-bar mr-2"></i>
+                        Diabetes Care
+                    </div>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100 animate-on-scroll" style="animation-delay: 0.4s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-user-md text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold font-display text-gray-900 mb-4">Thyroid Function</h4>
+                    <p class="text-gray-600 mb-6">Complete thyroid panel including TSH, T3, T4 for comprehensive endocrine health assessment.</p>
+                    <div class="flex items-center text-purple-600 font-semibold">
+                        <i class="fas fa-stethoscope mr-2"></i>
+                        Endocrine Health
+                    </div>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100 animate-on-scroll" style="animation-delay: 0.5s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-female text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold font-display text-gray-900 mb-4">Women's Health</h4>
+                    <p class="text-gray-600 mb-6">Specialized tests for women's health including hormone panels, pregnancy tests, and gynecological screenings.</p>
+                    <div class="flex items-center text-pink-600 font-semibold">
+                        <i class="fas fa-venus mr-2"></i>
+                        Women's Care
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-bold font-display text-gray-900 mb-4">
+                    About <span class="text-gradient">Vijay Laboratory</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Setting new standards in diagnostic excellence with advanced technology and compassionate care
+                </p>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary-600 to-accent-500 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <!-- Featured Ads Carousel -->
+            <div class="animate-on-scroll" style="animation-delay: 0.2s;">
+                <div class="relative max-w-7xl mx-auto">
+                    <!-- Carousel Container -->
+                    <div class="about-carousel-container relative overflow-hidden rounded-3xl shadow-2xl">
+                        <!-- Carousel Slides -->
+                        <div class="about-carousel-slides relative">
+                            <!-- Slide 1 - Ads1 -->
+                            <div class="about-carousel-slide active">
+                                <img src="Ads1.jpg" alt="Special Offer 1" class="w-full h-[600px] object-cover cursor-zoom-in transition-transform duration-300 hover:scale-105" style="max-width: 1100px; margin: 0 auto;" onclick="zoomImage(this)">
+                            </div>
+                            
+                            <!-- Slide 2 - Ads2 -->
+                            <div class="about-carousel-slide">
+                                <img src="Ads2.jpg" alt="Special Offer 2" class="w-full h-[600px] object-cover cursor-zoom-in transition-transform duration-300 hover:scale-105" style="max-width: 1100px; margin: 0 auto;" onclick="zoomImage(this)">
+                            </div>
+                        </div>
+                        
+                        <!-- Navigation Arrows -->
+                        <button class="about-carousel-nav about-carousel-prev bg-primary-600 hover:bg-primary-700 text-white shadow-lg" onclick="aboutCarouselPrev()">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="about-carousel-nav about-carousel-next bg-primary-600 hover:bg-primary-700 text-white shadow-lg" onclick="aboutCarouselNext()">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <!-- Dots Indicator -->
+                        <div class="about-carousel-dots">
+                            <button class="about-carousel-dot active" onclick="aboutCarouselGoTo(0)"></button>
+                            <button class="about-carousel-dot" onclick="aboutCarouselGoTo(1)"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Why Choose Vijay Laboratory Section -->
+            <div class="mt-20 animate-on-scroll">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center mb-16 animate-on-scroll">
+                    <h3 class="text-3xl md:text-4xl font-bold font-display text-gray-900 mb-4">
+                        Why Choose <span class="text-gradient">Vijay Laboratory</span>
+                    </h3>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Excellence in diagnostics through innovation, quality, and exceptional service
+                    </p>
+                </div>
+                
+                <!-- Features Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center animate-on-scroll">
+                        <div class="w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-700 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <i class="fas fa-robot text-white text-3xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold font-display text-gray-900 mb-4">Fully Automated</h4>
+                        <p class="text-gray-600">Advanced automation ensures precision and eliminates human error in testing processes.</p>
+                    </div>
+                    
+                    <div class="text-center animate-on-scroll" style="animation-delay: 0.1s;">
+                        <div class="w-20 h-20 bg-gradient-to-br from-success-500 to-success-700 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <i class="fas fa-clock text-white text-3xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold font-display text-gray-900 mb-4">Rapid Results</h4>
+                        <p class="text-gray-600">Quick turnaround time without compromising on accuracy or quality standards.</p>
+                    </div>
+                    
+                    <div class="text-center animate-on-scroll" style="animation-delay: 0.2s;">
+                        <div class="w-20 h-20 bg-gradient-to-br from-accent-500 to-accent-700 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <i class="fas fa-home text-white text-3xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold font-display text-gray-900 mb-4">Home Collection</h4>
+                        <p class="text-gray-600">Convenient sample collection at your doorstep with trained phlebotomists.</p>
+                    </div>
+                    
+                    <div class="text-center animate-on-scroll" style="animation-delay: 0.3s;">
+                        <div class="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-600 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <i class="fas fa-certificate text-white text-3xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold font-display text-gray-900 mb-4">NABL Certified</h4>
+                        <p class="text-gray-600">Accredited laboratory with stringent quality control and assurance protocols.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-bold font-display text-gray-900 mb-4">
+                    Get In <span class="text-gradient">Touch</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Contact us for any queries, appointments, or information about our services
+                </p>
+            </div>
+            
+            <!-- Contact Grid -->
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Contact Info -->
+                <div class="lg:col-span-1 space-y-6 animate-on-scroll">
+                    <!-- Address -->
+                    <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 mb-2">Address</h3>
+                                <p class="text-gray-600 text-left">14/357, <br> Thiruchengode - Rasipuram Rd near Sri Sivasakthi Medicals, Pillanallur, Rasipuram, <br>Tamil Nadu 637403, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Phone -->
+                    <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-success-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 mb-2">Phone</h3>
+                                <p class="text-gray-600">+91 98765 43210<br>+91 12345 67890</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Email -->
+                    <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-accent-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 mb-2">Email</h3>
+                                <p class="text-gray-600">info@vijaylaboratory.com<br>support@vijaylaboratory.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="lg:col-span-2 animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="bg-white rounded-3xl shadow-xl p-8">
+                        <h3 class="text-2xl font-bold font-display text-gray-900 mb-6">Send us a Message</h3>
+                        <form id="contactForm" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-semibold text-gray-700">Name</label>
+                                    <input type="text" id="contactName" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200" placeholder="Your full name" required>
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-semibold text-gray-700">Email</label>
+                                    <input type="email" id="contactEmail" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200" placeholder="your@email.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-semibold text-gray-700">Phone</label>
+                                    <input type="tel" id="contactPhone" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200" placeholder="+91 98765 43210" required>
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-semibold text-gray-700">Subject</label>
+                                    <select id="contactSubject" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200" required>
+                                        <option value="">Select a subject</option>
+                                        <option value="Home Sample Collection">Home Sample Collection</option>
+                                        <option value="Test Inquiry">Test Inquiry</option>
+                                        <option value="Appointment Booking">Appointment Booking</option>
+                                        <option value="Report Query">Report Query</option>
+                                        <option value="General Inquiry">General Inquiry</option>
+                                        <option value="Technical Support">Technical Support</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <label class="block text-sm font-semibold text-gray-700">Message</label>
+                                <textarea rows="5" id="contactMessage" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200" placeholder="How can we help you?" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-primary-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                Send via WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Footer Content -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary-600 to-primary-800 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-microscope text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold font-display">Vijay Laboratory</h3>
+                            <p class="text-gray-400">Excellence in Laboratory Medicine</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Leading diagnostic laboratory providing accurate, reliable, and timely test results with state-of-the-art technology and expert medical professionals.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors duration-200">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors duration-200">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors duration-200">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors duration-200">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold font-display mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors duration-200">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors duration-200">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-200">About Us</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-200">Contact</a></li>
+                        <li><a href="#book-visit" class="text-gray-400 hover:text-white transition-colors duration-200">Book Test</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-bold font-display mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Blood Tests</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Cardiac Profile</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Diabetes Panel</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Thyroid Tests</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Home Collection</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        © 2025 Vijay Laboratory. All rights reserved. | NABL Certified Laboratory
+                    </p>
+                    <div class="flex space-x-6 text-sm">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Quality Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Zoom Modal -->
+    <div id="imageZoomModal" class="fixed inset-0 bg-black bg-opacity-90 z-[999] hidden items-center justify-center p-4">
+        <div class="relative max-w-full max-h-full">
+            <button onclick="closeImageZoom()" class="absolute -top-12 right-0 text-white hover:text-gray-300 text-2xl transition-colors duration-200">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="zoomedImage" src="" alt="Zoomed Image" class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl">
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle with enhanced animations
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = mobileMenuBtn.querySelector('i');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+                mobileMenuBtn.style.transform = 'rotate(0deg)';
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-times');
+                mobileMenuBtn.style.transform = 'rotate(90deg)';
+            }
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+                mobileMenuBtn.style.transform = 'rotate(0deg)';
+            }
+        });
+        
+        // Image Zoom Functionality
+        function zoomImage(img) {
+            const modal = document.getElementById('imageZoomModal');
+            const zoomedImage = document.getElementById('zoomedImage');
+            
+            zoomedImage.src = img.src;
+            zoomedImage.alt = img.alt;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            
+            // Disable body scroll when modal is open
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeImageZoom() {
+            const modal = document.getElementById('imageZoomModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            
+            // Re-enable body scroll
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close zoom modal when clicking outside the image
+        document.getElementById('imageZoomModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeImageZoom();
+            }
+        });
+        
+        // Close zoom modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeImageZoom();
+            }
+        });
+        
+        // Enhanced smooth scrolling for navigation links with active state
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    // Remove active class from all nav links
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked link (if it's a nav link)
+                    if (this.classList.contains('nav-link')) {
+                        this.classList.add('active');
+                    }
+                    
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.remove('fa-times');
+                    menuIcon.classList.add('fa-bars');
+                    mobileMenuBtn.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+        
+        // Enhanced navbar scroll effect with background transition
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-xl');
+                nav.style.background = 'rgba(255, 255, 255, 0.99)';
+            } else {
+                nav.classList.remove('shadow-xl');
+                nav.style.background = 'rgba(255, 255, 255, 0.98)';
+            }
+        });
+        
+        // Active section highlighting based on scroll position
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Animate on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all elements with animate-on-scroll class
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Form submissions
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Check if this is the contact form
+                if (form.id === 'contactForm') {
+                    // Get form data
+                    const name = document.getElementById('contactName').value;
+                    const email = document.getElementById('contactEmail').value;
+                    const phone = document.getElementById('contactPhone').value;
+                    const subject = document.getElementById('contactSubject').value;
+                    const message = document.getElementById('contactMessage').value;
+                    
+                    // Validate required fields
+                    if (!name || !email || !phone || !subject || !message) {
+                        alert('Please fill in all required fields.');
+                        return;
+                    }
+                    
+                    // Format message for WhatsApp
+                    const whatsappMessage = `*Contact Request from Website*\n\n` +
+                        `*Name:* ${name}\n` +
+                        `*Email:* ${email}\n` +
+                        `*Phone:* ${phone}\n` +
+                        `*Subject:* ${subject}\n\n` +
+                        `*Message:*\n${message}\n\n` +
+                        `---\n` +
+                        `Sent from Vijay Laboratory Website`;
+                    
+                    // Encode message for URL
+                    const encodedMessage = encodeURIComponent(whatsappMessage);
+                    
+                    // Vijay Laboratory WhatsApp number (replace with actual number)
+                    const whatsappNumber = '+919876543210'; // Update this with actual WhatsApp number
+                    
+                    // Create WhatsApp URL
+                    const whatsappURL = `https://wa.me/${whatsappNumber.replace('+', '')}?text=${encodedMessage}`;
+                    
+                    // Open WhatsApp
+                    window.open(whatsappURL, '_blank');
+                    
+                    // Show success message
+                    alert('Redirecting to WhatsApp...');
+                    
+                    // Reset form
+                    form.reset();
+                } else {
+                    // Handle other forms with default behavior
+                    alert('Thank you for your submission! We will contact you shortly.');
+                }
+            });
+        });
+        
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+        
+        // Ads Carousel Functionality
+        class AdsCarousel {
+            constructor() {
+                this.currentSlide = 0;
+                this.slides = document.querySelectorAll('.carousel-slide');
+                this.dots = document.querySelectorAll('.carousel-dot');
+                this.prevBtn = document.getElementById('prevSlide');
+                this.nextBtn = document.getElementById('nextSlide');
+                this.autoSlideInterval = null;
+                
+                this.init();
+            }
+            
+            init() {
+                // Add event listeners
+                this.prevBtn.addEventListener('click', () => this.prevSlide());
+                this.nextBtn.addEventListener('click', () => this.nextSlide());
+                
+                // Dot navigation
+                this.dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => this.goToSlide(index));
+                });
+                
+                // Auto-advance slides
+                this.startAutoSlide();
+                
+                // Pause auto-advance on hover
+                const carousel = document.getElementById('adsCarousel');
+                carousel.addEventListener('mouseenter', () => this.stopAutoSlide());
+                carousel.addEventListener('mouseleave', () => this.startAutoSlide());
+                
+                // Touch/swipe support for mobile
+                this.addTouchSupport();
+            }
+            
+            goToSlide(slideIndex) {
+                // Remove active class from current slide
+                this.slides[this.currentSlide].classList.remove('active');
+                this.dots[this.currentSlide].classList.remove('active');
+                
+                // Update current slide
+                this.currentSlide = slideIndex;
+                
+                // Add active class to new slide
+                this.slides[this.currentSlide].classList.add('active');
+                this.dots[this.currentSlide].classList.add('active');
+            }
+            
+            nextSlide() {
+                const nextIndex = (this.currentSlide + 1) % this.slides.length;
+                this.goToSlide(nextIndex);
+            }
+            
+            prevSlide() {
+                const prevIndex = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
+                this.goToSlide(prevIndex);
+            }
+            
+            startAutoSlide() {
+                this.stopAutoSlide(); // Clear any existing interval
+                this.autoSlideInterval = setInterval(() => {
+                    this.nextSlide();
+                }, 5000); // Change slide every 5 seconds
+            }
+            
+            stopAutoSlide() {
+                if (this.autoSlideInterval) {
+                    clearInterval(this.autoSlideInterval);
+                    this.autoSlideInterval = null;
+                }
+            }
+            
+            addTouchSupport() {
+                const carousel = document.getElementById('adsCarousel');
+                let startX = 0;
+                let endX = 0;
+                
+                carousel.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                });
+                
+                carousel.addEventListener('touchend', (e) => {
+                    endX = e.changedTouches[0].clientX;
+                    const swipeThreshold = 50;
+                    const diff = startX - endX;
+                    
+                    if (Math.abs(diff) > swipeThreshold) {
+                        if (diff > 0) {
+                            this.nextSlide(); // Swipe left - next slide
+                        } else {
+                            this.prevSlide(); // Swipe right - previous slide
+                        }
+                    }
+                });
+            }
+        }
+        
+        // Initialize carousel when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new AdsCarousel();
+            initializeAboutCarousel();
+        });
+        
+        // About Carousel functionality
+        let aboutCurrentSlide = 0;
+        const aboutSlides = [];
+        let aboutCarouselInterval;
+        
+        function initializeAboutCarousel() {
+            const slides = document.querySelectorAll('.about-carousel-slide');
+            const dots = document.querySelectorAll('.about-carousel-dot');
+            
+            slides.forEach((slide, index) => {
+                aboutSlides.push(slide);
+            });
+            
+            // Start auto-advance
+            startAboutCarouselAutoAdvance();
+            
+            // Add touch/swipe support
+            addAboutCarouselTouchSupport();
+        }
+        
+        function aboutCarouselNext() {
+            const slides = document.querySelectorAll('.about-carousel-slide');
+            const dots = document.querySelectorAll('.about-carousel-dot');
+            
+            slides[aboutCurrentSlide].classList.remove('active');
+            dots[aboutCurrentSlide].classList.remove('active');
+            
+            aboutCurrentSlide = (aboutCurrentSlide + 1) % slides.length;
+            
+            slides[aboutCurrentSlide].classList.add('active');
+            dots[aboutCurrentSlide].classList.add('active');
+            
+            resetAboutCarouselAutoAdvance();
+        }
+        
+        function aboutCarouselPrev() {
+            const slides = document.querySelectorAll('.about-carousel-slide');
+            const dots = document.querySelectorAll('.about-carousel-dot');
+            
+            slides[aboutCurrentSlide].classList.remove('active');
+            dots[aboutCurrentSlide].classList.remove('active');
+            
+            aboutCurrentSlide = (aboutCurrentSlide - 1 + slides.length) % slides.length;
+            
+            slides[aboutCurrentSlide].classList.add('active');
+            dots[aboutCurrentSlide].classList.add('active');
+            
+            resetAboutCarouselAutoAdvance();
+        }
+        
+        function aboutCarouselGoTo(slideIndex) {
+            const slides = document.querySelectorAll('.about-carousel-slide');
+            const dots = document.querySelectorAll('.about-carousel-dot');
+            
+            slides[aboutCurrentSlide].classList.remove('active');
+            dots[aboutCurrentSlide].classList.remove('active');
+            
+            aboutCurrentSlide = slideIndex;
+            
+            slides[aboutCurrentSlide].classList.add('active');
+            dots[aboutCurrentSlide].classList.add('active');
+            
+            resetAboutCarouselAutoAdvance();
+        }
+        
+        function startAboutCarouselAutoAdvance() {
+            aboutCarouselInterval = setInterval(() => {
+                aboutCarouselNext();
+            }, 5000); // Auto-advance every 5 seconds
+        }
+        
+        function resetAboutCarouselAutoAdvance() {
+            clearInterval(aboutCarouselInterval);
+            startAboutCarouselAutoAdvance();
+        }
+        
+        function addAboutCarouselTouchSupport() {
+            const carousel = document.querySelector('.about-carousel-container');
+            let startX = 0;
+            let endX = 0;
+            
+            carousel.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+            });
+            
+            carousel.addEventListener('touchend', (e) => {
+                endX = e.changedTouches[0].clientX;
+                const diff = startX - endX;
+                
+                if (Math.abs(diff) > 50) { // Minimum swipe distance
+                    if (diff > 0) {
+                        aboutCarouselNext(); // Swipe left - next slide
+                    } else {
+                        aboutCarouselPrev(); // Swipe right - previous slide
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
