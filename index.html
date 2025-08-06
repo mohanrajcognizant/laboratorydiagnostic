@@ -605,15 +605,16 @@
                     <div class="flex items-center space-x-4">
                         <div class="relative">
                             <div class="w-14 h-14 logo-icon rounded-2xl shadow-lg flex items-center justify-center">
-                                <i class="fas fa-microscope text-white text-xl"></i>
+                                <i class="fas fa-microscope text-white text-4xl"></i>
                             </div>
                             <div class="absolute -bottom-1 -right-1 w-5 h-5 logo-badge rounded-full border-2 border-white flex items-center justify-center">
                                 <i class="fas fa-check text-white text-xs"></i>
                             </div>
                         </div>
-                        <div class="flex flex-col"> 
-                            <h1 class="text-2xl font-bold font-display text-gray-800 tracking-tight">Vijay Laboratory</h1>
-                            <span class="text-sm font-semibold text-primary-600 uppercase tracking-widest">NABL Certified Excellence</span>
+                        <div class="flex flex-col justify-center">
+                            <h1 class="text-2xl font-bold font-display text-gray-800 tracking-tight text-left">Vijay Laboratory</h1>
+                            <span class="text-2xl font-bold font-display text-gray-800  text-left">Center</span>
+                            <span class="text-xs font-semibold text-primary-600 uppercase tracking-widest text-center">NABL Certified Excellence</span>
                         </div>
                     </div>
                 </div>
@@ -630,7 +631,7 @@
                         <i class="fas fa-info-circle mr-2 text-sm"></i>About
                     </a>
                     <a href="#contact" class="nav-link text-gray-700 hover:text-primary-600 px-4 py-2 rounded-lg transition-colors duration-300">
-                        <i class="fas fa-home-medical mr-2 text-sm"></i>Home Collection
+                        <i class="fas fa-house-medical mr-2 text-sm"></i>Home Collection
                     </a>
                     <a href="#contact" class="nav-link text-gray-700 hover:text-primary-600 px-4 py-2 rounded-lg transition-colors duration-300">
                         <i class="fas fa-phone mr-2 text-sm"></i>Contact
@@ -665,7 +666,7 @@
                     <i class="fas fa-info-circle mr-3 text-primary-500 w-5"></i>About
                 </a>
                 <a href="#contact" class="mobile-menu-item block text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">
-                    <i class="fas fa-home-medical mr-3 text-primary-500 w-5"></i>Home Collection
+                    <i class="fas fa-house-medical mr-3 text-primary-500 w-5"></i>Home Collection
                 </a>
                 <a href="#contact" class="mobile-menu-item block text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300">
                     <i class="fas fa-phone mr-3 text-primary-500 w-5"></i>Contact
@@ -1078,131 +1079,380 @@
                     
                     <!-- Table Content -->
                     <div class="p-8">
-                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                            <!-- Test Item -->
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-primary-50 transition-all duration-300 border border-gray-100 hover:border-primary-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-primary-500 rounded-full group-hover:bg-primary-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-primary-700 transition-colors duration-200">Haemogram (CBC)</span>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                            <!-- Test Card 1 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-primary-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-primary-500 rounded-full group-hover:bg-primary-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-primary-600">₹120</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-primary-700 transition-colors duration-200">Haemogram (CBC)</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Complete Blood Count</span>
+                                        <button class="text-primary-500 hover:text-primary-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-success-50 transition-all duration-300 border border-gray-100 hover:border-success-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-success-500 rounded-full group-hover:bg-success-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-success-700 transition-colors duration-200">Glucose - Fasting</span>
+                            <!-- Test Card 2 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-success-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-success-500 rounded-full group-hover:bg-success-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-success-600">₹80</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-success-700 transition-colors duration-200">Glucose - Fasting</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Blood Sugar Test</span>
+                                        <button class="text-success-500 hover:text-success-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-accent-50 transition-all duration-300 border border-gray-100 hover:border-accent-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-accent-500 rounded-full group-hover:bg-accent-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-accent-700 transition-colors duration-200">Glucose - Post Prandial</span>
+                            <!-- Test Card 3 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-accent-500 rounded-full group-hover:bg-accent-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-accent-600">₹90</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-accent-700 transition-colors duration-200">Glucose - Post Prandial</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">After Meal Test</span>
+                                        <button class="text-accent-500 hover:text-accent-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-orange-50 transition-all duration-300 border border-gray-100 hover:border-orange-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-orange-500 rounded-full group-hover:bg-orange-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-orange-700 transition-colors duration-200">Glucose - Random</span>
+                            <!-- Test Card 4 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-orange-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-orange-500 rounded-full group-hover:bg-orange-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-orange-600">₹75</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-orange-700 transition-colors duration-200">Glucose - Random</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Random Blood Sugar</span>
+                                        <button class="text-orange-500 hover:text-orange-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-purple-50 transition-all duration-300 border border-gray-100 hover:border-purple-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-purple-500 rounded-full group-hover:bg-purple-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-purple-700 transition-colors duration-200">Lipid Profile</span>
+                            <!-- Test Card 5 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-purple-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-purple-500 rounded-full group-hover:bg-purple-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-purple-600">₹300</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-purple-700 transition-colors duration-200">Lipid Profile</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Cholesterol Panel</span>
+                                        <button class="text-purple-500 hover:text-purple-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-pink-50 transition-all duration-300 border border-gray-100 hover:border-pink-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-pink-500 rounded-full group-hover:bg-pink-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-pink-700 transition-colors duration-200">Liver Function Test</span>
+                            <!-- Test Card 6 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-pink-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-pink-500 rounded-full group-hover:bg-pink-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-pink-600">₹450</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-pink-700 transition-colors duration-200">Liver Function Test</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">LFT Panel</span>
+                                        <button class="text-pink-500 hover:text-pink-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-indigo-50 transition-all duration-300 border border-gray-100 hover:border-indigo-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-indigo-500 rounded-full group-hover:bg-indigo-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-indigo-700 transition-colors duration-200">Glyco Hemoglobin (HbA1c)</span>
+                            <!-- Test Card 7 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-indigo-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-indigo-500 rounded-full group-hover:bg-indigo-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-indigo-600">₹250</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-indigo-700 transition-colors duration-200">Glyco Hemoglobin (HbA1c)</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Diabetes Monitor</span>
+                                        <button class="text-indigo-500 hover:text-indigo-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-teal-50 transition-all duration-300 border border-gray-100 hover:border-teal-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-teal-500 rounded-full group-hover:bg-teal-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-teal-700 transition-colors duration-200">Thyroid Function Test</span>
+                            <!-- Test Card 8 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-teal-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-teal-500 rounded-full group-hover:bg-teal-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-teal-600">₹350</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-teal-700 transition-colors duration-200">Thyroid Function Test</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">TFT Panel</span>
+                                        <button class="text-teal-500 hover:text-teal-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-red-50 transition-all duration-300 border border-gray-100 hover:border-red-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-red-500 rounded-full group-hover:bg-red-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-red-700 transition-colors duration-200">TSH</span>
+                            <!-- Test Card 9 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-red-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-red-500 rounded-full group-hover:bg-red-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-red-600">₹180</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-red-700 transition-colors duration-200">TSH</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Thyroid Stimulating</span>
+                                        <button class="text-red-500 hover:text-red-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-blue-50 transition-all duration-300 border border-gray-100 hover:border-blue-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-blue-500 rounded-full group-hover:bg-blue-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-blue-700 transition-colors duration-200">Urea</span>
+                            <!-- Test Card 10 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-blue-500 rounded-full group-hover:bg-blue-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-blue-600">₹100</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-blue-700 transition-colors duration-200">Urea</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Kidney Function</span>
+                                        <button class="text-blue-500 hover:text-blue-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-green-50 transition-all duration-300 border border-gray-100 hover:border-green-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-green-500 rounded-full group-hover:bg-green-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-green-700 transition-colors duration-200">Creatinine</span>
+                            <!-- Test Card 11 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-green-500 rounded-full group-hover:bg-green-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-green-600">₹110</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-green-700 transition-colors duration-200">Creatinine</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Kidney Function</span>
+                                        <button class="text-green-500 hover:text-green-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-yellow-50 transition-all duration-300 border border-gray-100 hover:border-yellow-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-yellow-500 rounded-full group-hover:bg-yellow-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-yellow-700 transition-colors duration-200">Uric Acid</span>
+                            <!-- Test Card 12 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-yellow-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-yellow-500 rounded-full group-hover:bg-yellow-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-yellow-600">₹95</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-yellow-700 transition-colors duration-200">Uric Acid</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Gout Test</span>
+                                        <button class="text-yellow-500 hover:text-yellow-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-primary-50 transition-all duration-300 border border-gray-100 hover:border-primary-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-primary-500 rounded-full group-hover:bg-primary-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-primary-700 transition-colors duration-200">Electrolytes</span>
+                            <!-- Test Card 13 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-primary-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-primary-500 rounded-full group-hover:bg-primary-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-primary-600">₹200</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-primary-700 transition-colors duration-200">Electrolytes</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Na, K, Cl Panel</span>
+                                        <button class="text-primary-500 hover:text-primary-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-success-50 transition-all duration-300 border border-gray-100 hover:border-success-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-success-500 rounded-full group-hover:bg-success-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-success-700 transition-colors duration-200">Sodium</span>
+                            <!-- Test Card 14 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-success-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-success-500 rounded-full group-hover:bg-success-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-success-600">₹70</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-success-700 transition-colors duration-200">Sodium</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Electrolyte Test</span>
+                                        <button class="text-success-500 hover:text-success-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-accent-50 transition-all duration-300 border border-gray-100 hover:border-accent-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-accent-500 rounded-full group-hover:bg-accent-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-accent-700 transition-colors duration-200">Potassium</span>
+                            <!-- Test Card 15 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-accent-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-accent-500 rounded-full group-hover:bg-accent-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-accent-600">₹85</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-accent-700 transition-colors duration-200">Potassium</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Electrolyte Test</span>
+                                        <button class="text-accent-500 hover:text-accent-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-orange-50 transition-all duration-300 border border-gray-100 hover:border-orange-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-orange-500 rounded-full group-hover:bg-orange-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-orange-700 transition-colors duration-200">Urine Examination</span>
+                            <!-- Test Card 16 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-orange-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-orange-500 rounded-full group-hover:bg-orange-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-orange-600">₹150</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-orange-700 transition-colors duration-200">Urine Examination</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Complete Urine</span>
+                                        <button class="text-orange-500 hover:text-orange-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-purple-50 transition-all duration-300 border border-gray-100 hover:border-purple-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-purple-500 rounded-full group-hover:bg-purple-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-purple-700 transition-colors duration-200">Calcium</span>
+                            <!-- Test Card 17 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-purple-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-purple-500 rounded-full group-hover:bg-purple-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-purple-600">₹130</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-purple-700 transition-colors duration-200">Calcium</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Bone Health</span>
+                                        <button class="text-purple-500 hover:text-purple-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-pink-50 transition-all duration-300 border border-gray-100 hover:border-pink-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-pink-500 rounded-full group-hover:bg-pink-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-pink-700 transition-colors duration-200">C- Reactive Protein</span>
+                            <!-- Test Card 18 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-pink-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-pink-500 rounded-full group-hover:bg-pink-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-pink-600">₹220</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-pink-700 transition-colors duration-200">C- Reactive Protein</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Inflammation Test</span>
+                                        <button class="text-pink-500 hover:text-pink-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-indigo-50 transition-all duration-300 border border-gray-100 hover:border-indigo-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-indigo-500 rounded-full group-hover:bg-indigo-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-indigo-700 transition-colors duration-200">Rheumatoid Factor</span>
+                            <!-- Test Card 19 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-indigo-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-indigo-500 rounded-full group-hover:bg-indigo-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-indigo-600">₹180</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-indigo-700 transition-colors duration-200">Rheumatoid Factor</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Arthritis Test</span>
+                                        <button class="text-indigo-500 hover:text-indigo-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-teal-50 transition-all duration-300 border border-gray-100 hover:border-teal-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-teal-500 rounded-full group-hover:bg-teal-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-teal-700 transition-colors duration-200">Rheumatoid Factor by Nephelometry</span>
+                            <!-- Test Card 20 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-teal-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-teal-500 rounded-full group-hover:bg-teal-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-teal-600">₹280</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-teal-700 transition-colors duration-200">RF by Nephelometry</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Advanced RF Test</span>
+                                        <button class="text-teal-500 hover:text-teal-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-red-50 transition-all duration-300 border border-gray-100 hover:border-red-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-red-500 rounded-full group-hover:bg-red-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-red-700 transition-colors duration-200">Blood Group & RH</span>
+                            <!-- Test Card 21 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-red-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-red-500 rounded-full group-hover:bg-red-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-red-600">₹60</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-red-700 transition-colors duration-200">Blood Group & RH</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Blood Typing</span>
+                                        <button class="text-red-500 hover:text-red-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-blue-50 transition-all duration-300 border border-gray-100 hover:border-blue-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-blue-500 rounded-full group-hover:bg-blue-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-blue-700 transition-colors duration-200">Bilirubin level Total</span>
+                            <!-- Test Card 22 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-blue-500 rounded-full group-hover:bg-blue-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-blue-600">₹160</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-blue-700 transition-colors duration-200">Bilirubin Total</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Liver Function</span>
+                                        <button class="text-blue-500 hover:text-blue-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-green-50 transition-all duration-300 border border-gray-100 hover:border-green-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-green-500 rounded-full group-hover:bg-green-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-green-700 transition-colors duration-200">SGOT (AST)</span>
+                            <!-- Test Card 23 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-green-500 rounded-full group-hover:bg-green-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-green-600">₹140</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-green-700 transition-colors duration-200">SGOT (AST)</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Liver Enzyme</span>
+                                        <button class="text-green-500 hover:text-green-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-yellow-50 transition-all duration-300 border border-gray-100 hover:border-yellow-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-yellow-500 rounded-full group-hover:bg-yellow-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-yellow-700 transition-colors duration-200">SGPT (ALT)</span>
+                            <!-- Test Card 24 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-yellow-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-yellow-500 rounded-full group-hover:bg-yellow-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-yellow-600">₹145</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-yellow-700 transition-colors duration-200">SGPT (ALT)</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Liver Enzyme</span>
+                                        <button class="text-yellow-500 hover:text-yellow-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="flex items-center space-x-3 p-4 rounded-xl hover:bg-violet-50 transition-all duration-300 border border-gray-100 hover:border-violet-200 hover:shadow-md group">
-                                <div class="w-3 h-3 bg-violet-500 rounded-full group-hover:bg-violet-600 transition-colors duration-200"></div>
-                                <span class="text-gray-800 font-medium group-hover:text-violet-700 transition-colors duration-200">25 OH Cholecalciferol (D2+D3)</span>
+                            <!-- Test Card 25 -->
+                            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-violet-200 transform hover:scale-105 group">
+                                <div class="p-5">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-3 h-3 bg-violet-500 rounded-full group-hover:bg-violet-600 transition-colors duration-200"></div>
+                                        <span class="text-lg font-bold text-violet-600">₹400</span>
+                                    </div>
+                                    <h4 class="text-gray-800 font-semibold text-sm mb-2 group-hover:text-violet-700 transition-colors duration-200">Vitamin D (D2+D3)</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs text-gray-500">Vitamin D Test</span>
+                                        <button class="text-violet-500 hover:text-violet-700 text-xs font-medium">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
